@@ -3,7 +3,6 @@
     "name": "firebase-offline-test",
     "slug": "firebase-offline-test",
     "version": "1.0.0",
-
     "scheme": "firebase-offline-test",
     "web": {
       "bundler": "metro",
@@ -21,28 +20,34 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ivanleopoldoc.firebaseofflinetest"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.ivanleopoldoc.firebaseofflinetest"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "98e7929b-8862-4120-b5e9-b74269637acb"
       }
     }
   }
